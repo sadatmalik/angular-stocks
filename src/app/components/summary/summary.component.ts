@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import {StockInterface} from "../../services/stocks.service";
 
 @Component({
   selector: 'summary',
@@ -6,7 +7,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './summary.component.html'
 })
 export class SummaryComponent {
-  @Input() stock: any;
+  @Input() stock: StockInterface | undefined;
 
   isNegative() {
     return !(!this.stock || this.stock.change >= 0);
