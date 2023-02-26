@@ -16,7 +16,11 @@ import { StocksService } from './services/stocks.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [StocksService],
-  bootstrap: [AppComponent]
+  providers: [
+    StocksService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
